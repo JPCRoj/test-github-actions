@@ -21,10 +21,10 @@ jobs:
         uses: pozil/auto-assign-issue@v1.0.3
         if: ${{ github.event.label.name == 'bug'}}
         with:
-            assignes: stefano-gurrieri
+            assignees: stefano-gurrieri
       - name: Auto-assign generic issue (no bug)
         uses: pozil/auto-assign-issue@v1.0.3
         if: ${{ github.event.label.name != 'bug'}}
         with:
-          assignes: paolamgc
+          assignees: paolamgc
           
