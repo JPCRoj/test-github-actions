@@ -23,5 +23,5 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a multi-line script
         run: |
-          echo Hello ${{ github.event.inputs }}!
+          echo Hello ${{ github.event.inputs.username }}!
           echo How are you?
