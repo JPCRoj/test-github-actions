@@ -22,6 +22,7 @@ jobs:
     steps:
       # Runs a single command using the runners shell
       - name: Run a multi-line script
+        if: ${{ github.event.inputs.username == 'stefano-gurrieri'}}
         run: |
           echo Hello ${{ github.event.inputs.username }}!
           echo How are you?
