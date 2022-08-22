@@ -22,9 +22,11 @@ jobs:
         if: ${{ github.event.label.name == 'bug'}}
         with:
             assignees: stefano-gurrieri
+            repo-token: ${{ secrets.SGU_PAT }}
       - name: Auto-assign generic issue (no bug)
         uses: pozil/auto-assign-issue@v1.0.3
         if: ${{ github.event.label.name != 'bug'}}
         with:
           assignees: paolamgc
+          repo-token: ${{ secrets.SGU_PAT }}
           
