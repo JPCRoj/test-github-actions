@@ -17,5 +17,5 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Run echo command
-      run: |
-      echo "Workflow running after approval."
+        run: |
+          echo "Workflow running after approval."
